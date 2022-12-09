@@ -15,7 +15,7 @@ const authUser= asyncHandler(async(req,res)=>{
         })
     }else{
         res.status(401)
-        throw new Error('Biết nhập mật khẩu với email không ?')
+        throw new Error('Vui lòng nhập mật khẩu hoặc email!')
     }
     
 })

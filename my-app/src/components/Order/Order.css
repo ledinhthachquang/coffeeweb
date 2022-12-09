@@ -1,0 +1,68 @@
+.app__menu{
+    height: 100vh;
+    background-color: var(--color-white);
+    margin-bottom:80vh;
+}
+.headtext__cormorant{
+   font-family: var(--font-base);
+   color: var(--color-golden);
+   font-size: 64px;
+   line-height: 83.2px;
+   letter-spacing: 0.04em;
+   text-transform: capitalize;
+   margin-bottom: 5rem;
+}
+.heading{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.app__menu .app__card{
+   border: 5px solid var(--color-golden);
+    border-radius: 28px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2  );
+    padding: 1rem;
+}
+.app__menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    gap : 4rem;
+ }
+ 
+ .app__menu .box-container .box{
+    text-align: center;
+ }
+ 
+ .app__menu .box-container .box img{
+    width: 30rem;
+    margin-bottom: 2.5rem;
+ }
+ 
+ .app__menu .box-container .box h3{
+    font-size: 2rem;
+    color:var(--black);
+ }
+
+ 
+@media screen and (min-width: 2000px) {
+   .app__menu .box-container .box img {
+       width: 210px;
+   }
+}
+
+@media screen and (max-width: 1150px) {
+   .app__menu .box-container .box img {
+      width: 110px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+   .app__menu .box-container .box img {
+      width: 110px;
+  }
+}

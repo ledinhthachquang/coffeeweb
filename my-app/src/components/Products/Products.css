@@ -1,0 +1,228 @@
+.app__products{
+    height: 215vh;
+    background-color: var(--color-white);
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    margin-bottom:100vh;
+}
+.app__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+    min-height: 40rem; 
+}
+.app__products-title img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 25rem;
+}
+.app__products-footer img{
+    width: 25rem;
+}
+.app__products h1{ 
+    margin-top: 15rem;
+    margin-left: 20rem;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 120px;
+    color: var(--color-golden);
+    text-transform: capitalize;
+}
+.product-name{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.about-text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #4D4D4D;
+}
+.app__products-intro1{
+    display: flex;
+    justify-content: space-around;
+}
+.app__products-intro2{
+    padding-left: 5rem;
+    margin-top: auto;
+}
+.app__products-intro2 img{
+    margin-left: 5rem;
+}
+
+.app__products-intro3 img{
+    /* padding-bottom: 8rem; */
+    margin-left: 7rem;
+
+}
+.app__products-intro1 img{
+    /* padding-bottom: 8rem; */
+    margin-left: 15rem;
+
+}
+.app__products-c{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+}
+.app__products-content{
+    padding: 5rem;
+    width: 800px;
+    text-align: center;
+}
+.product-img{
+    width: 65rem;
+}
+.heading3{
+    text-align: start;
+}
+.heading4{
+    text-align: center;
+}
+/* .app__products-footer{
+    display: flex;
+    flex-direction: column;
+}
+/* .v1_623{
+    margin-top: 5rem;
+    width: 100%;
+    height: 5px;
+    background: #461111;
+    border-radius: 14px;
+} */ 
+
+
+@media screen and (min-width: 2000px) {
+    .app__content-h1 {
+        font-size: 180px;
+        line-height: 210px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .app__products-title h1 {
+        font-size: 80px;
+        padding: 0;
+    }
+    .app__products-title img{
+        width: 15rem;
+    }
+    .product-img{
+        width: 30rem;
+    }
+    .app__products-content{
+        padding: 2rem;
+        width: 500px;
+        text-align: center;
+    }
+    .app__products-content .product-name{
+        font-size: 50px;
+    }
+    .app__products-content .about-text{
+        font-size: 20px;
+    }
+    .app__products-c{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;  
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__products-title h1 {
+        font-size: 55px;
+        padding: 0;
+    }
+    .app__products-title img{
+        width: 15em;
+    }
+    .product-img{
+        width: 27rem;
+    }
+    .app__products-content{
+        padding: 2rem;
+        width: 500px;
+        text-align: center;
+    }
+    .app__products-content .product-name{
+        font-size: 37px;
+    }
+    .app__products-content .about-text{
+        font-size: 18px;
+    }
+    .app__products-c{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;  
+    }
+    
+    .app__products-intro1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .heading4{
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app__products-title h1 {
+        margin: auto;
+        font-size: 35px;
+        padding: 0;
+    }
+    .app__products-title img{
+        display: none;
+    }
+    .product-img{
+        width: 27rem;
+    }
+    .app__products-content{
+        padding: 2rem;
+        width: 300px;
+        text-align: center;
+    }
+    .app__products-content .product-name{
+        font-size: 27px;
+    }
+    .app__products-content .about-text{
+        font-size: 12px;
+    }
+    .app__products-c{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    .app__products-intro1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .app__products-intro1 img{
+        margin-right: 15rem;
+    }
+    .app__products-footer img{
+        width: 25rem;
+    }
+}   

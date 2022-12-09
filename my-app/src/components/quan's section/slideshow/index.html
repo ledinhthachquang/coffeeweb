@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>web cafeeeeeeee</title>
+    <!-- Basic style -->    
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <!-- HTML code for next and previous button -->
+    <!-- Thẻ Chứa Slideshow -->
+ <div class="slideshow-container">
+    <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+     <div class="mySlides fade">
+       <div class="numbertext">1 / 6</div>
+       <img src="../../../assets/dong-goi.jpg" style="width:100%">
+       <div class="text">Thu hoạch cafe</div>
+     </div>
+    <div class="mySlides fade">
+       <div class="numbertext">2 / 6</div>
+       <img src="../../../assets/chebien.jpg" style="width:100%">
+       <div class="text">Sơ chế, làm sạch</div>
+     </div>
+    <div class="mySlides fade">
+       <div class="numbertext">3 / 6</div>
+       <img src="../../../assets/phoi-tron.jpg" style="width:100%">
+       <div class="text">Phối trộn cà phê</div>
+     </div>
+     <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="../../../assets/rang-cafe.jpg" style="width:100%">
+        <div class="text" >Rang cafe</div>
+      </div>
+      <div class="mySlides fade" >
+        <div class="numbertext">5 / 6</div>
+        <img src="../../../assets/xay-cafe.jpg" style="width:100%">
+        <div class="text" >Xay cafe</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="../../../assets/dong-goi.jpg" style="width:100%">
+        <div class="text">Đóng gói</div>
+      </div>
+
+
+    <!-- Nút điều khiển mũi tên-->
+     <a class="prev" onclick="plusSlides(-1)">❮</a>
+     <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+   <br>
+  <!-- Nút tròn điều khiển slideshow-->
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
+     <span class="dot" onclick="currentSlide(5)"></span>
+     <span class="dot" onclick="currentSlide(6)"></span>
+   </div>
+
+    <!-- Javascript code for next and previous button -->
+    <script>
+        var slideIndex = 1;
+ showSlides(slideIndex);
+function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+ }
+
+    </script>
+
+</body>
+
+</html>

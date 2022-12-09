@@ -1,0 +1,44 @@
+.section__padding {
+    padding: 4rem 6rem;
+  }
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__bg {
+    background: url('./assets/vlgt.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.app__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+.p__opensans {
+    font-family: 'Times New Roman';
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 21px;
+}
+.custom__button {
+    background-color: var(--color-crimson);
+      color: var(--color-black);
+      font-family: var(--font-base);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 28px;
+      font-size: 16px;
+      padding: 0.5rem 1.5rem;
+      border-radius: 1px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }

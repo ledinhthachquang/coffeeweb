@@ -3,7 +3,7 @@ import './Feedback.css'
 import images from '../../constants/images';
 const Feedback = () => {
   return (
-   <div class='app__feedback'>
+   <div class='app__feedback' id='fb'>
     <div class='app__feedback-head'>
         <img class='img__rs1' src={images.rs1} alt="" />
         <h1 class="v1__51">Phản hồi từ người tiêu dùng</h1>

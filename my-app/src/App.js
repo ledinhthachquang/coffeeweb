@@ -17,6 +17,7 @@ import LoginScreen from './Screen/LoginScreen';
 import RegisterScreen from './Screen/RegisterScreen';
 import ProfileScreen from './Screen/ProfileScreen';
 import Feedback from './components/Feedback/Feedback';
+import Navbarcustom from './components/Navbar/Navbarcustom'
 const mystyle = {
   margin:"200px"
 };
@@ -35,7 +36,7 @@ const AppLayout = () => (
 </>);
 const ProductLayout = ()=>(
   <>
-  <Navbar/>
+  <Navbarcustom/>
   <main style={mystyle}>
   <Container>
     
@@ -50,7 +51,7 @@ const ProductLayout = ()=>(
 );
 const EachProductLayout = ()=>(
   <>
-  <Navbar/>
+    <Navbarcustom/>
   <main style={mystyle}>
   <Container>
     
@@ -65,7 +66,8 @@ const EachProductLayout = ()=>(
 );
 const CartLayout = ()=>(
   <>
-  <Navbar/>
+    <Navbarcustom/>
+
   <main style={mystyle}>
   <Container>
     
@@ -80,7 +82,8 @@ const CartLayout = ()=>(
 );
 const LoginLayout = ()=>(
   <>
-  <Navbar/>
+    <Navbarcustom/>
+
   <main style={mystyle}>
   <Container>
     
@@ -95,7 +98,8 @@ const LoginLayout = ()=>(
 );
 const RegisterLayout = ()=>(
   <>
-  <Navbar/>
+    <Navbarcustom/>
+
   <main style={mystyle}>
   <Container>
     
@@ -110,7 +114,8 @@ const RegisterLayout = ()=>(
 );
 const ProfileLayout = ()=>(
   <>
-  <Navbar/>
+    <Navbarcustom/>
+
   <main style={mystyle}>
   <Container>
     

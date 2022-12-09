@@ -3,7 +3,7 @@ import './Introduce.css'
 
 const Introduce = () => {
   return (
-    <div className='app__intro '>
+    <div className='app__intro ' id="about">
         <main class="grid">
         <div class="v1_51">Giới thiệu</div>
         <div class="v1_52"></div>       

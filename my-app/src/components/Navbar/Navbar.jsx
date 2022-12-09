@@ -26,20 +26,22 @@ window.addEventListener('scroll',changeColor)
   return (
     <div className={color ? 'header header_bg' : 'header'}>
     <nav className="app__navbar ">
+    <a href='/' className='no-deco'>
       <div className="app__navbar-logo">
-        <h1 className='app__navbar-logo_content'>Hoàng Lê <div style={{display :'inline',color:'#DB9494'}}>Coffee</div> </h1>
+        
+        <div className='app__navbar-logo_content'>Hoàng Lê <div style={{display :'inline',color:'#DB9494'}}>Coffee</div> </div>
         <img src={images.sb} />
-      </div>
+      </div></a>
       <ul className="app__navbar-links">
-        <li className="p__opensans"><a href="/">Giới thiệu</a></li>
+        <li className="p__opensans"><a className='setColor' href="#about">Giới thiệu</a></li>
         <div />
-        <li className="p__opensans"><a href="/product">Sản phẩm</a></li>
+        <li className="p__opensans"><a className='setColor' href="/product">Sản phẩm</a></li>
         <div />
-        <li className="p__opensans"><a href="#about">Sản xuất</a></li>
+        <li className="p__opensans"><a className='setColor' href="#products">Sản xuất</a></li>
         <div />
-        <li className="p__opensans"><a href="#menu">Công đoạn</a></li>
+        <li className="p__opensans"><a className='setColor' href="#stage">Công đoạn</a></li>
         <div />
-        <li className="p__opensans"><a href="#menu">Phản hồi</a></li>
+        <li className="p__opensans"><a className='setColor' href="#fb">Phản hồi</a></li>
       </ul>
       {userInfo ? (<NavDropdown title={userInfo.name} id='username'>
           
@@ -50,22 +52,25 @@ window.addEventListener('scroll',changeColor)
       </NavDropdown>)//sua cai dropdown cho nay ne
       :(<div className="app__navbar-login">
       <a href="/login" className="p__opensans">Đăng nhập</a>
-      </div>) }
+      <div />
+      <a href="/cart" className="p__opensans custom__button">Giỏ hàng</a>
+      </div>
+      ) 
+      }
      
-     
-        <a href="/cart" className="p__opensans custom__button">Giỏ hàng</a>
       
+        
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
-              <li><a href="/" onClick={() => setToggleMenu(false)}>Giới thiệu</a></li>
-              <li><a href="#about" onClick={() => setToggleMenu(false)}>Sản phẩm</a></li>
-              <li><a href="#menu" onClick={() => setToggleMenu(false)}>Sản xuất</a></li>
-              <li><a href="#awards" onClick={() => setToggleMenu(false)}>Công đoạn</a></li>
-              <li><a href="#contact" onClick={() => setToggleMenu(false)}>Phản hồi</a></li>
+              <li><a className='setColor' href="/" onClick={() => setToggleMenu(false)}>Giới thiệu</a></li>
+              <li><a className='setColor' href="#about" onClick={() => setToggleMenu(false)}>Sản phẩm</a></li>
+              <li><a className='setColor'href="#products" onClick={() => setToggleMenu(false)}>Sản xuất</a></li>
+              <li><a className='setColor' href="#stage" onClick={() => setToggleMenu(false)}>Công đoạn</a></li>
+              <li><a className='setColor' href="#fb" onClick={() => setToggleMenu(false)}>Phản hồi</a></li>
             </ul>
           </div>
         )}

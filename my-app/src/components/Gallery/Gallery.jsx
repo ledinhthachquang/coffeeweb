@@ -17,7 +17,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="app__gallery flex__center">
+    <div className="app__gallery flex__center" id="stage">
       <div className="app__gallery-content">
         <h1 className="headtext__cormorant">Các công đoạn </h1>
         <ul className='app__list'>

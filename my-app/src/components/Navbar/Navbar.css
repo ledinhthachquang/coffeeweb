@@ -18,6 +18,17 @@
     background-repeat: repeat;
     background-attachment: fixed;
 }
+.header_bg1{
+    position: fixed;
+    height: 155px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .7s ease-in;
+    overflow: hidden;
+    background-image: linear-gradient(to right, var(--color-golden),#FC5C7D	); 
+}
 .app__navbar {
     height: 100%;
     display: flex;
@@ -34,16 +45,23 @@
     align-items: center;
     width: fit-content;
 }
-.app__navbar-logo h1{
+.app__navbar-logo_content{
     position: relative;
     width: 400px;
-    right: 10px;
+    right: 13px;
     font-family: 'Rufina';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
     color: white;
+}
+.no-deco{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
 }
 .app__navbar-logo img {
     position: absolute;
@@ -62,9 +80,10 @@
 .app__navbar-links li {
     margin: 0 1.7rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.app__navbar-links li:hover {
+.app__navbar-links .setColor:hover {
     color: var(--color-grey);
 }
 
@@ -77,6 +96,11 @@
 .app__navbar-login a {
     margin: 0 1rem;
     text-decoration: none;
+    transition: .5s ease;
+}
+.setColor {
+    color: white;
+    margin: 0 1rem;
     transition: .5s ease;
 }
 
@@ -92,6 +116,7 @@
     width: 2px;
     height: 30px;
     background: var(--color-golden);
+    margin-right: 1.5rem;
 }
 
 .app__navbar-smallscreen {
@@ -104,8 +129,8 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--color-black);
-    transition: .5s ease;
+    background-image: linear-gradient(to right, var(--color-golden),#FC5C7D)  ;
+        transition: .5s ease;
     flex-direction: column;
     z-index: 5;
 }
@@ -167,4 +192,7 @@
     .app__navbar-logo img {
         width: 80px;
     }
+}
+.no-deco{
+    text-decoration: none;
 }

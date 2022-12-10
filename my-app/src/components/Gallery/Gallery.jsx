@@ -21,12 +21,12 @@ const Gallery = () => {
       <div className="app__gallery-content">
         <h1 className="headtext__cormorant">Các công đoạn </h1>
         <ul className='app__list'>
-        <li><p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Thu hoạch coffe</p></li>
-        <li><p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Sơ chế và làm sạch</p></li>
-        <li><p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Phối trộn coffe</p></li>
-        <li><p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Rang coffe</p></li>
-        <li><p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Xay coffe</p></li>
-        <li><p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Đóng gói coffe</p></li>
+          <li><p className="p__opensans animate__1" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Thu hoạch coffee</p></li>
+          <li><p className="p__opensans animate__2" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Sơ chế và làm sạch</p></li>
+          <li><p className="p__opensans animate__3" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Phối trộn coffee</p></li>
+          <li><p className="p__opensans animate__4" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Rang coffee</p></li>
+          <li><p className="p__opensans animate__5" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Xay coffee</p></li>
+          <li><p className="p__opensans animate__6" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Đóng gói coffee</p></li>
         </ul>
         {/* <button type="button" className="custom__button">View More</button> */}
       </div>

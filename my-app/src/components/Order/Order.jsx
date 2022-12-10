@@ -3,7 +3,7 @@ import './Order.css'
 import images from '../../constants/images'
 const Order = () => {
   return (
-    <div className='app__menu section__padding'>
+    <div className='app__menu section__padding' id='order'>
         <div class="heading ">
         <img src={images.hd} alt="" />
              <div className='headtext__cormorant'>Món uống hôm nay</div>

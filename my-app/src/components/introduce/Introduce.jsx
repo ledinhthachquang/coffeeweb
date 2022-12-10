@@ -39,16 +39,17 @@ const Introduce = () => {
           }}
         >Đối với Hoàng Lê Coffee, chất lượng không phải là 'được kiểm soát' mà là 'được xây dựng'. Đó là sự nỗ lực được lặp đi lặp lại mỗi ngày , liên quan đến tất cả mọi người, và nó là một phần tất yếu của mọi công đoạn sản xuất. Rất đơn giản, đó là cách làm việc duy nhất mà chúng tôi biết được!</motion.p> 
         
-        <motion.button class="v1_61 btn green_button"
+        <motion.a class="v1_61 btn green_button" 
         whileHover={{
           scale: 1.1,
           backgroundColor: "#d62ba3"
         }}
         transition={{ duration: 0.5, yoyo: Infinity }}
         className="Button"
+        href="#order"
       >
         Xem thêm
-      </motion.button>
+      </motion.a>
         <a href="#" ></a>
         <div class="v1_62"></div>
         {/* <motion.button class="v1_61 btn green_button"

@@ -20,8 +20,7 @@ import Feedback from './components/Feedback/Feedback';
 import Navbarcustom from './components/Navbar/Navbarcustom'
 import '../src/assets/Bg_Image.jpg'
 const mystyle = {
-  margin:"250px",
-  background:"url(../src/assets/Bg_Image.jpg)"
+  margin:"270px",
 };
 const mystyle1 = {
   margin:"200px"

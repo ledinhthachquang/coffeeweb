@@ -10,11 +10,11 @@ const Feedback = () => {
         <img class='img__rs2' src={images.rs1} alt="" />
     </div>
    <div className='app__feedback-content'>
-  
-        <div className='app__feedback-wrap d1'>
+//   Mới thêm class để nó tác động lên ảnh Carson Hugn
+        <div className='app__feedback-wrap image-border d1'>
           <div className='app__feedback-content-img'>
             <h2 class="name1">Carson Hugn</h2>   
-            <img className='img__fb' src={images.img} alt="wait"/>
+            <img className='img__fb main-image' src={images.img} alt="wait"/>
           </div>     
           <p class="text2">“Là người sành điệu uống cà phê, lướt Web 24h mục Địa Điểm Uống Cà Phê Ngon, rất ấn tượng với bài viết về HOANG LE COFFEE Sở hữu bí quyết rang xay và chế biến Cà Phê Nguyên Chất độc nhất vô nhị,  nhóm chúng tôi quyết ghé xem sao, cà phê ngon thật, quán độc đáo lạ, giá rẻ, cả chưa từng trải nghiệm ở đâu,… sẽ ghé lần sau”. </p>     
         </div>

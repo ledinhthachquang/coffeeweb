@@ -32,6 +32,100 @@
     flex-direction: column;
 }
 
+.app__list .animate__1 {
+    position: relative;
+    animation-name: animateText;
+    animation-duration: 4s;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;  
+  	animation-fill-mode: forwards;	
+  	animation-play-state: paused;
+}
+
+.app__list .animate__2 {
+    position: relative;
+    animation-name: animateText__2;
+    animation-duration: 4s;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;  
+  	animation-fill-mode: forwards;	
+  	animation-play-state: paused;
+}
+
+.app__list .animate__3 {
+    position: relative;
+    animation-name: animateText__3;
+    animation-duration: 4s;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;  
+  	animation-fill-mode: forwards;	
+  	animation-play-state: paused;
+}
+
+.app__list .animate__4 {
+    position: relative;
+    animation-name: animateText__4;
+    animation-duration: 4s;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;  
+  	animation-fill-mode: forwards;	
+  	animation-play-state: paused;
+}
+
+.app__list .animate__5 {
+    position: relative;
+    animation-name: animateText__5;
+    animation-duration: 4s;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;  
+  	animation-fill-mode: forwards;	
+  	animation-play-state: paused;
+}
+
+.app__list .animate__6 {
+    position: relative;
+    animation-name: animateText__6;
+    animation-duration: 4s;
+    animation-duration: 0.01s;
+    animation-iteration-count: 1;  
+  	animation-fill-mode: forwards;	
+  	animation-play-state: paused;
+}
+
+@keyframes animateText {
+    from {left:0px; top:0px;}
+    to {left:50px; top:0px;}
+}
+
+@keyframes animateText__2 {
+    from {left:5px; top:0px;}
+    to {left:60px; top:0px}
+}
+
+@keyframes animateText__3 {
+    from {left:10px; top:0px;}
+    to {left:110px; top:0px;}
+}
+
+@keyframes animateText__4 {
+    from {left:10px; top:0px;}
+    to {left:150px; top:0px;}
+}
+
+@keyframes animateText__5 {
+    from {left:20px; top:0px;}
+    to {left:180px; top:0px;}
+}
+
+@keyframes animateText__6 {
+    from {left:25px; top:0px;}
+    to {left:190px; top:0px;}
+}
+
+.app__list li p:hover {
+    animation-play-state: running;
+}
+
 .app__gallery-content button {
     margin-top: 1rem;
 }

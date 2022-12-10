@@ -85,6 +85,48 @@
   .name2{  
     text-align: center;
   }
+
+/* 
+    Đây là dòng code tác động lên ảnh khi hover vào
+    Những dòng này có cú pháp của file scss
+    nên muốn không lỗi thì đổi file css thành scss
+.image-border {
+	width: 300px;
+	height: 300px;
+	background-color: #eee;
+	background-image: url('/my-app/src/assets/Image.png');
+	position: relative;
+	z-index: 1;
+
+    &:after {
+		content: '';
+		position: absolute;
+		width: 290px;
+		height:290px;
+		left: 5px;
+		top: 5px;
+		background-color: #fff;
+	}
+  
+    .main-image {
+		position: absolute;
+		width: 290px;
+		height:290px;
+		left: 5px;
+		top: 5px;
+		background-image: url('/my-app/src/assets/Image.png');
+		background-size: 300px 300px;
+		background-position: center center;
+		z-index: 2;
+		transition: .5s cubic-bezier(.5,.03,.41,1);
+	}
+	
+	&:hover > .main-image {
+		transform: translate(-15px, -15px);
+		transition: .5s cubic-bezier(.5,.03,.41,1);
+	}
+}   */
+
   @media screen and (max-width: 1450px) {
     .app__feedback{
         height: 100%;

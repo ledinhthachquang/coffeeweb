@@ -1,5 +1,5 @@
 import React from 'react'
-import './Feedback.css'
+import './Feedback.scss'
 import images from '../../constants/images';
 const Feedback = () => {
   return (
@@ -10,7 +10,7 @@ const Feedback = () => {
         <img class='img__rs2' src={images.rs1} alt="" />
     </div>
    <div className='app__feedback-content'>
-//   Mới thêm class để nó tác động lên ảnh Carson Hugn
+{/* Mới thêm class để nó tác động lên ảnh Carson Hugn */}
         <div className='app__feedback-wrap image-border d1'>
           <div className='app__feedback-content-img'>
             <h2 class="name1">Carson Hugn</h2>   

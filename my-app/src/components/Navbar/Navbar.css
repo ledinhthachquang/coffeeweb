@@ -43,6 +43,7 @@
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
+    box-shadow: 0 3px 10px rgb(0.4,0.1,0.2,0.3);
 }
 .header_bg1{
     position: fixed;
@@ -54,6 +55,7 @@
     transition: .7s ease-in;
     overflow: hidden;
     background-image: linear-gradient(to right, var(--color-golden),#FC5C7D	); 
+    box-shadow: 0 3px 10px rgb(0,0,0,0.3);
 }
 .app__navbar {
     height: 100%;

@@ -1,12 +1,21 @@
 .app__menu{
-    height: 100vh;
-    background-color: var(--color-white);
-    margin-bottom:20vh;
+   margin-top: 20rem;
+   /* width: 90%; */
+    height: 120vh;
+    padding-left: 12rem;
+    background: -webkit-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #00aaee 10%, #DD2476 90%); /* W3C */
+    /* margin-bottom:20vh; */
+    /* box-shadow: 0px 7px 10px ; */
 }
 .headtext__cormorant{
    font-family: var(--font-base);
-   color: var(--color-golden);
+   /* color: oldlace; */
    font-size: 64px;
+   font-weight: 700;
    line-height: 83.2px;
    letter-spacing: 0.04em;
    text-transform: capitalize;
@@ -19,11 +28,66 @@
    align-items: center;
    margin: auto;
 }
-.app__menu .app__card{
-   border: 5px solid var(--color-golden);
+.app__card{
+   width: 480px;
+   height: 480px;
+   border: 15px;
+   position: relative;
     border-radius: 28px;
-    box-shadow: 0 3px 10px rgb(0,0,0,0.2  );
-    padding: 1rem;
+    background: white;
+    transition: 0.2s ease-out;
+    box-shadow: 0px 7px 10px ;
+    padding: 1.5rem;
+    display: flex;
+   align-items: flex-end;
+}
+.app__card:hover{
+   transform: translateY(20px)
+}
+.app__card :hover::before{
+   opacity: .35;
+}
+.app__card :hover .card_info{
+   opacity: 1;
+  transform: translateY(0px);
+}
+.app__card::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
+   background: rgba(0, 0, 0, 0.6);
+   z-index: 2;
+   transition: 0.5s;
+   opacity: 0;
+}
+
+.card_button{
+         padding: 0.8rem;
+			outline: none;
+			border: none;
+			border-radius: 3px;
+			background: white;
+			color: black;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.4s ease;
+}
+.card_button:hover{
+   background: dodgerblue;
+				color: white
+}
+.card_info{
+		position: relative;
+		z-index: 3;
+		color: white;
+		opacity: 0;
+		transform: translateY(30px);
+		transition: 0.5s;
 }
 .app__menu .box-container{
     display: grid;
@@ -33,36 +97,46 @@
     margin: auto;
     gap : 4rem;
  }
+ .card_info{
+      letter-spacing: 1px;
+      font-size: 15px;
+      margin-top: 8px;
+ }
  
  .app__menu .box-container .box{
     text-align: center;
  }
  
  .app__menu .box-container .box img{
-    width: 30rem;
-    margin-bottom: 2.5rem;
+   width: 100%;
+   height: 100%;
+   -o-object-fit: cover;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-radius: 15px;
  }
  
- .app__menu .box-container .box h3{
-    font-size: 2rem;
-    color:var(--black);
- }
 
  
 @media screen and (min-width: 2000px) {
-   .app__menu .box-container .box img {
-       width: 210px;
+   .app__card{
+      width: 360px;
+      height: 360px;
    }
 }
 
 @media screen and (max-width: 1150px) {
-   .app__menu .box-container .box img {
-      width: 110px;
-  }
+   .app__card{
+      width: 240px;
+      height: 240px;
+   }
 }
 
 @media screen and (max-width: 650px) {
-   .app__menu .box-container .box img {
-      width: 110px;
-  }
+   .app__card{
+      width: 120px;
+      height: 120px;
+   }
 }

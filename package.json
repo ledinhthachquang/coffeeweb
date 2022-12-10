@@ -28,7 +28,8 @@
     "express-async-handler": "^1.2.0",
     "framer-motion": "^7.6.19",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.7.5"
+    "mongoose": "^6.7.5",
+    "node-sass": "^8.0.0"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",

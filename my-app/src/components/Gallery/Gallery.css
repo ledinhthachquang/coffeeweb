@@ -99,7 +99,7 @@
 
 @keyframes animateText__2 {
     from {left:5px; top:0px;}
-    to {left:60px; top:0px}
+    to {left:80px; top:0px}
 }
 
 @keyframes animateText__3 {
@@ -119,7 +119,7 @@
 
 @keyframes animateText__6 {
     from {left:25px; top:0px;}
-    to {left:190px; top:0px;}
+    to {left:210px; top:0px;}
 }
 
 .app__list li p:hover {

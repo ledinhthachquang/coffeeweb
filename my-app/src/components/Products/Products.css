@@ -3,9 +3,10 @@
     background-color: var(--color-white);
     width: 100%;
     position: relative;
+    
     flex-direction: column;
     display: flex;
-    margin-bottom:20vh;
+    margin-bottom:30vh;
 }
 .app__wrapper{
     display: flex;

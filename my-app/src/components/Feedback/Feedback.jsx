@@ -6,7 +6,7 @@ const Feedback = () => {
    <div class='app__feedback' id='fb'>
     <div class='app__feedback-head'>
         <img class='img__rs1' src={images.rs1} alt="" />
-        <h1 class="v1__51">Phản hồi từ người tiêu dùng</h1>
+        <div class="v1__51">Phản hồi từ người tiêu dùng</div>
         <img class='img__rs2' src={images.rs1} alt="" />
     </div>
    <div className='app__feedback-content'>

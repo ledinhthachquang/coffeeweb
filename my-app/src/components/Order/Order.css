@@ -1,7 +1,7 @@
 .app__menu{
     height: 100vh;
     background-color: var(--color-white);
-    margin-bottom:80vh;
+    margin-bottom:20vh;
 }
 .headtext__cormorant{
    font-family: var(--font-base);

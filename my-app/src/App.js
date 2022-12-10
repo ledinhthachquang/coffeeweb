@@ -19,6 +19,9 @@ import ProfileScreen from './Screen/ProfileScreen';
 import Feedback from './components/Feedback/Feedback';
 import Navbarcustom from './components/Navbar/Navbarcustom'
 const mystyle = {
+  margin:"250px"
+};
+const mystyle1 = {
   margin:"200px"
 };
 
@@ -37,7 +40,7 @@ const AppLayout = () => (
 const ProductLayout = ()=>(
   <>
   <Navbarcustom/>
-  <main style={mystyle}>
+  <main style={mystyle1}>
   <Container>
     
     

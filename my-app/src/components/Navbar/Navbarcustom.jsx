@@ -33,21 +33,23 @@ window.addEventListener('scroll',changeColor)
         <img src={images.sb} />
       </div></a>
       <ul className="app__navbar-links">
-        <li className="p__opensans"><a className='setColor' href="#about">Giới thiệu</a></li>
+        <li className="p__opensans"><a className='setColor' href="/">Giới thiệu</a></li>
         <div />
         <li className="p__opensans"><a className='setColor' href="/product">Sản phẩm</a></li>
         <div />
-        <li className="p__opensans"><a className='setColor' href="#products">Sản xuất</a></li>
+        <li className="p__opensans"><a className='setColor' href="/">Sản xuất</a></li>
         <div />
-        <li className="p__opensans"><a className='setColor' href="#stage">Công đoạn</a></li>
+        <li className="p__opensans"><a className='setColor' href="/">Công đoạn</a></li>
         <div />
-        <li className="p__opensans"><a className='setColor' href="#fb">Phản hồi</a></li>
+        <li className="p__opensans"><a className='setColor' href="/">Phản hồi</a></li>
       </ul>
       {userInfo ? (<NavDropdown title={userInfo.name} id='username'>
           
-          <NavDropdown.Item href='/profile'>Hồ sơ</NavDropdown.Item>
+          <NavDropdown.Item id="padding_user" href='/profile'>Hồ sơ</NavDropdown.Item>
           
-          <NavDropdown.Item onClick={logoutHandler}>Đăng xuất</NavDropdown.Item>
+          <NavDropdown.Item id="padding_user" href="/cart"><a href="/cart">Giỏ hàng</a></NavDropdown.Item>
+
+          <NavDropdown.Item id="padding_user" onClick={logoutHandler}>Đăng xuất</NavDropdown.Item>
           
       </NavDropdown>)//sua cai dropdown cho nay ne
       :(<div className="app__navbar-login">

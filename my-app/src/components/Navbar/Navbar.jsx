@@ -45,9 +45,12 @@ window.addEventListener('scroll',changeColor)
       </ul>
       {userInfo ? (<NavDropdown title={userInfo.name} id='username'>
           
-          <NavDropdown.Item href='/profile'>Hồ sơ</NavDropdown.Item>
+          <NavDropdown.Item id="padding_user" href='/profile'>Hồ sơ</NavDropdown.Item>
+
+          <NavDropdown.Item id="padding_user" href="/cart"><a href="/cart">Giỏ hàng</a></NavDropdown.Item>
+
           
-          <NavDropdown.Item onClick={logoutHandler}>Đăng xuất</NavDropdown.Item>
+          <NavDropdown.Item id="padding_user" onClick={logoutHandler}>Đăng xuất</NavDropdown.Item>
           
       </NavDropdown>)//sua cai dropdown cho nay ne
       :(<div className="app__navbar-login">

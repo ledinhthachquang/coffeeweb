@@ -18,8 +18,10 @@ import RegisterScreen from './Screen/RegisterScreen';
 import ProfileScreen from './Screen/ProfileScreen';
 import Feedback from './components/Feedback/Feedback';
 import Navbarcustom from './components/Navbar/Navbarcustom'
+import '../src/assets/Bg_Image.jpg'
 const mystyle = {
-  margin:"250px"
+  margin:"250px",
+  background:"url(../src/assets/Bg_Image.jpg)"
 };
 const mystyle1 = {
   margin:"200px"

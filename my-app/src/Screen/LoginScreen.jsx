@@ -6,6 +6,8 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import {login} from '../action/userActions'
+import './LoginScreen.css'
+import images from '../constants/images'
 const LoginScreen = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -26,7 +28,7 @@ const LoginScreen = () => {
         dispatch(login(email,password))
     }
   return (//custom form dang nhap cho nay ne
-    <FormContainer>
+    <FormContainer className = "custom__form">
         {error &&<Message variant='danger'>{error}</Message>}
         {loading && <Loader/>}
        <h1>Đăng nhập</h1>

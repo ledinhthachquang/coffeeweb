@@ -21,7 +21,7 @@ const RegisterScreen = () => {
     const Redirect = window.location.search?(String(searchParams)).split('=')[1]:'/';
     useEffect(()=>{
         if(userInfo){
-            navigate(Redirect)
+            navigate('/')
         }
     },[userInfo,navigate,Redirect])
     const submitHandler=(e)=>{

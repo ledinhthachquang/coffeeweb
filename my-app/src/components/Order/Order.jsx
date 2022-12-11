@@ -6,7 +6,7 @@ const Order = () => {
     <div className='app__menu app__wrapper6 section__padding' id='order'>
         <div class="heading ">
         <img src={images.hd} alt="" />
-             <div className='headtext__cormorant'>Món uống hôm nay</div>
+             <div className='headtext__cormorant'>Menu</div>
          </div>
 
    <div class="box-container">

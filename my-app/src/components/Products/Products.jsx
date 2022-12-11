@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div className='app__products  section__padding1' id='products'>
       <div className='app__products-title app__wrapper3'>
-      <h1 >Các sản phẩm nổi bật</h1>
+      <h1 >Các loại hạt cà phê</h1>
         <img src={images.rs} alt="" />
       </div>
         

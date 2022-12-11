@@ -3,7 +3,7 @@ import './Header.css'
 import images from '../../constants/images';
 const Header = () => {
   return (
-    <div className='app__header app__bg  section__padding'>
+    <div className='app__header app__bg app__wrapper4  section__padding'>
         <div className='app__content'>
             <h1 className='p__opensans app__content-h1'>
                 Cà phê nguyên <br />chất

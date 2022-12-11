@@ -4,13 +4,13 @@ import images from '../../constants/images';
 
 const Products = () => {
   return (
-    <div className='app__products ' id='products'>
-      <div className='app__products-title app__wrapper'>
+    <div className='app__products  section__padding1' id='products'>
+      <div className='app__products-title app__wrapper3'>
       <h1 >Các sản phẩm nổi bật</h1>
         <img src={images.rs} alt="" />
       </div>
         
-      <div className='app__products-intro1  section__padding '>
+      <div className='app__products-intro1 '>
      
       <img src={images.i2} alt="Cà phê Robusta" class="mobile-img-2 product-img img2"/>
       <div className='app__products-content'>
@@ -23,7 +23,7 @@ const Products = () => {
       </div>
       </div>
       <div className='app__products-c'>
-      <div className='app__products-intro2  section__padding '>
+      <div className='app__products-intro2 '>
         <div className='app__products-content heading3'>
         <p class="product-name p__opensans">Cà phê Arabica</p>
           <p class = "about-text t3 ">
@@ -35,7 +35,7 @@ const Products = () => {
           <img src={images.i3} alt="Cà phê Arabica" class="mobile-img-3 product-img img3"/>
       </div>
 
-      <div className='app__products-intro3  section__padding '>
+      <div className='app__products-intro3  '>
       <img src={images.i4} alt="Cà phê Liberia" class="mobile-img-4 product-img img4"/>
         <div className='app__products-content'>
         <p class=" product-name p__opensans heading4">Cà phê Liberia</p>

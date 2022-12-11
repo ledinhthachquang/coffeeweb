@@ -1,5 +1,6 @@
 .app__gallery {
     flex-direction: row;
+    width: 100%;
     height: 70vh;
     /* background: url('../../assets/bg.png'); */
     /* background-image: linear-gradient(to right,#6A82FB,#FC5C7D	);  */

@@ -8,6 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+##Recommendations
+###`npm run dev`
+Use this command to run both font-end and backend in the same time
+
 ### `npm start`
 
 Runs the app in the development mode.\

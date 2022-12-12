@@ -4,15 +4,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-
-In the project directory, you can run:
 ## Recommendations
 ### `npm run dev`
 Use this command to run both font-end and backend in the same time
 
-
+## Available Scripts
+In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\

@@ -1,5 +1,8 @@
 # coffeeweb
 
+<img width="130" alt="image" src="https://user-images.githubusercontent.com/111257273/213053911-cabb8cc6-5835-4276-bfd0-0d75a6a8dc5b.png">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
